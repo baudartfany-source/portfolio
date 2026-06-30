@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#030303;color:#f5efe8;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 78% 10%,rgba(255,95,30,.12),transparent 28%),linear-gradient(180deg,#020202,#070505 52%,#020202);z-index:-3}
+.grain{position:fixed;inset:0;pointer-events:none;opacity:.08;z-index:50;background-image:repeating-radial-gradient(circle at 0 0,rgba(255,255,255,.14) 0 1px,transparent 1px 4px);mix-blend-mode:overlay}
+.nav{position:fixed;top:0;left:0;width:100%;height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;z-index:60;background:linear-gradient(180deg,rgba(0,0,0,.75),transparent)}
+.logo{color:#fff;text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:1.1rem}.logo span{color:#ff4d22}.nav-links a{color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;margin-left:34px;opacity:.85}.nav-links a:hover{color:#ff4d22}
+.hero{position:relative;min-height:100vh;overflow:hidden;display:flex;align-items:center;padding:0 5vw}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:contrast(1.02)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.74) 33%,rgba(0,0,0,.20) 72%,rgba(0,0,0,.72) 100%),linear-gradient(180deg,rgba(0,0,0,.10),rgba(0,0,0,.35) 75%,#030303 100%)}
+.hero-content{position:relative;z-index:2;max-width:620px;margin-top:80px}
+.hero h1{font-size:clamp(4.5rem,10vw,10rem);line-height:.82;text-transform:uppercase;letter-spacing:.035em;margin:0 0 24px;font-weight:300}
+.tagline{text-transform:uppercase;letter-spacing:.45em;font-size:clamp(.85rem,1.35vw,1.2rem);color:#f0e7df;margin:0 0 24px}.role{text-transform:uppercase;letter-spacing:.12em;color:#d3c8c0;font-size:.86rem}.button{display:inline-flex;gap:22px;align-items:center;margin-top:24px;padding:16px 28px;border:1px solid #ff4d22;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;background:rgba(0,0,0,.28)}.button span{color:#ff4d22;font-size:1.2rem}
+.side-index{position:absolute;right:5vw;top:28%;z-index:3;display:grid;gap:34px;color:#cfc6bf}.side-index span{opacity:.75}.side-index .active{color:#ff4d22;opacity:1}
+.section{padding:88px 5vw;max-width:1600px;margin:0 auto}
+.section-title{display:flex;align-items:end;gap:22px;margin-bottom:42px}.section-title span{color:#ff4d22;font-weight:700}.section-title h2{font-size:clamp(2.4rem,5vw,5rem);font-weight:300;text-transform:uppercase;letter-spacing:.18em;margin:0}.section-title.small h2{font-size:clamp(1.8rem,3vw,3rem)}
+.projects{border-bottom:1px solid rgba(255,255,255,.09)}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:58px}.project-card{background:transparent}.project-card video{width:100%;aspect-ratio:16/9;background:#000;display:block;border:none;box-shadow:0 24px 60px rgba(0,0,0,.55);transition:transform .35s ease}.project-card:hover video{transform:scale(1.025)}.project-card h3{text-transform:uppercase;letter-spacing:.18em;font-size:clamp(1.5rem,2.2vw,2.35rem);font-weight:300;margin:24px 0 10px}.project-card p{text-transform:uppercase;letter-spacing:.12em;color:#ff8a50;font-size:.78rem;margin:0}
+.info{display:grid;grid-template-columns:1fr 1.1fr;gap:7vw;border-bottom:1px solid rgba(255,255,255,.09)}
+.skill{margin:28px 0}.skill div{display:flex;justify-content:space-between;gap:20px;text-transform:uppercase;letter-spacing:.08em;font-size:.86rem}.skill b{font-weight:400}.skill i{display:block;height:4px;background:linear-gradient(90deg,#ff4d22 var(--level),rgba(255,255,255,.09) var(--level));margin-top:12px;box-shadow:0 0 14px rgba(255,77,34,.5)}
+.about p{color:#d5c9c1;line-height:1.85;font-size:1rem}.about strong{color:#fff}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;align-items:stretch;min-height:58vh;border-top:1px solid rgba(255,255,255,.08)}.contact-text{padding:88px 5vw}.contact a{color:#fff;text-decoration:none;display:block;margin:28px 0}.contact p{color:#d5c9c1}.contact img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:950px){.nav-links{display:none}.hero{min-height:88vh}.hero-content{margin-top:120px}.hero h1{font-size:clamp(3.8rem,16vw,7rem)}.side-index{display:none}.project-grid,.info,.contact{grid-template-columns:1fr}.project-grid{gap:46px}.contact img{height:auto}.section{padding:70px 6vw}.contact-text{padding:70px 6vw}}

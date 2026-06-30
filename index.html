@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fany Baudart — Portfolio V12</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav class="nav">
+    <a class="logo" href="#home">FB<span>.</span></a>
+    <div class="nav-links">
+      <a href="#home">Accueil</a>
+      <a href="#projects">Projets</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <img src="images/hero.png" alt="Portrait de Fany Baudart" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Fany<br>Baudart</h1>
+      <p class="tagline">Every frame tells a story.</p>
+      <p class="role">Monteuse vidéo &amp; Motion Designer</p>
+      <a href="#projects" class="button">Voir mes projets <span>→</span></a>
+    </div>
+
+    <div class="side-index">
+      <span class="active">01</span>
+      <span>02</span>
+      <span>03</span>
+      <span>04</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="projects section">
+      <div class="section-title">
+        <span>02</span>
+        <h2>Projets</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <video controls preload="metadata">
+            <source src="videos/the-division.mp4" type="video/mp4">
+          </video>
+          <h3>The Division</h3>
+          <p>Bande-annonce promotionnelle</p>
+        </article>
+
+        <article class="project-card">
+          <video controls preload="metadata">
+            <source src="videos/gone-girl.mp4" type="video/mp4">
+          </video>
+          <h3>Gone Girl</h3>
+          <p>Recut de bande-annonce</p>
+        </article>
+
+        <article class="project-card">
+          <video controls preload="metadata">
+            <source src="videos/preacher.mp4" type="video/mp4">
+          </video>
+          <h3>Preacher</h3>
+          <p>Générique inspiré</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="info section">
+      <div id="skills" class="skills">
+        <div class="section-title small">
+          <span>03</span>
+          <h2>Compétences</h2>
+        </div>
+
+        <div class="skill">
+          <div><span>Adobe Premiere Pro</span><b>90%</b></div>
+          <i style="--level:90%"></i>
+        </div>
+
+        <div class="skill">
+          <div><span>Adobe After Effects</span><b>75%</b></div>
+          <i style="--level:75%"></i>
+        </div>
+
+        <div class="skill">
+          <div><span>Adobe Photoshop</span><b>30%</b></div>
+          <i style="--level:30%"></i>
+        </div>
+
+        <div class="skill">
+          <div><span>Adobe Illustrator</span><b>30%</b></div>
+          <i style="--level:30%"></i>
+        </div>
+      </div>
+
+      <div id="about" class="about">
+        <div class="section-title small">
+          <span>04</span>
+          <h2>À propos</h2>
+        </div>
+
+        <p>Bonjour, je m’appelle <strong>Fany Baudart</strong>, j’ai 20 ans et je suis actuellement en formation <strong>Graduate Monteur Multimédia</strong> chez Studi.</p>
+        <p>Passionnée par le cinéma, le montage vidéo et le motion design, j’aime raconter des histoires à travers l’image, le rythme et l’ambiance.</p>
+        <p>Mon ambition est de continuer à développer mon univers créatif et, à long terme, de réaliser mon propre film d’animation.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-text">
+        <div class="section-title small">
+          <span>05</span>
+          <h2>Contact</h2>
+        </div>
+
+        <a href="mailto:baudartfany@gmail.com">baudartfany@gmail.com</a>
+        <p>Basée en France</p>
+        <p>Disponible pour stages &amp; opportunités créatives</p>
+      </div>
+
+      <img src="images/restaurant.png" alt="Portrait de Fany Baudart au coucher de soleil">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
