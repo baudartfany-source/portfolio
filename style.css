@@ -21,3 +21,29 @@ body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle
 .about p{color:#d5c9c1;line-height:1.85;font-size:1rem}.about strong{color:#fff}
 .contact{display:grid;grid-template-columns:.8fr 1.2fr;align-items:stretch;min-height:58vh;border-top:1px solid rgba(255,255,255,.08)}.contact-text{padding:88px 5vw}.contact a{color:#fff;text-decoration:none;display:block;margin:28px 0}.contact p{color:#d5c9c1}.contact img{width:100%;height:100%;object-fit:cover;display:block}
 @media(max-width:950px){.nav-links{display:none}.hero{min-height:88vh}.hero-content{margin-top:120px}.hero h1{font-size:clamp(3.8rem,16vw,7rem)}.side-index{display:none}.project-grid,.info,.contact{grid-template-columns:1fr}.project-grid{gap:46px}.contact img{height:auto}.section{padding:70px 6vw}.contact-text{padding:70px 6vw}}
+
+/* V12 skills descriptions */
+.skill p{
+  color:#d5c9c1;
+  line-height:1.55;
+  font-size:.88rem;
+  margin:9px 0 0;
+}
+.skill b{
+  white-space:nowrap;
+}
+
+/* Ajustements V12 : nouveau métier et vidéo verticale IMPKT */
+.role-subtitle{color:#f0e7df;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;margin:8px 0 0}
+.project-card-vertical video{aspect-ratio:9/16;object-fit:contain;max-height:520px;width:auto;max-width:100%;margin:0 auto;background:#000}
+.project-card .project-description{text-transform:none;letter-spacing:normal;color:#d5c9c1;font-size:.88rem;line-height:1.55;margin-top:12px}
+@media(max-width:950px){.project-card-vertical video{max-height:540px}}
+
+/* Disposition A : Gone Girl et Preacher sur la premiere ligne, IMPKT centre en dessous. */
+@media (min-width:951px){
+  .project-grid-option-a{grid-template-columns:repeat(2,minmax(0,1fr));gap:58px;}
+  .project-grid-option-a .project-card-vertical{grid-column:1 / -1;justify-self:center;width:min(100%,420px);text-align:center;}
+}
+@media (max-width:950px){
+  .project-grid-option-a .project-card-vertical{width:min(100%,420px);justify-self:center;text-align:center;}
+}
